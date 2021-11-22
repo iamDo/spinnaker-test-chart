@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: spinnaker-test-chart
+  name: spinnaker-test-chart-configmap
+data:
+  index.html: |
+    <html>
+    <body>
+    <h1>{{ .Values.greeting }}</h1>
+    </body>
+    </html>
